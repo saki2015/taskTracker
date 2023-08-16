@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title%}
+    <title> Home Page </title>
+{% endblock title%}
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'images/sunflowers.jpg' %}" alt="Sunflower" class= "rounded-lg shadow" width="360" height="250" >
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/sunflowers.jpg' %}" alt="Sunflower" class= "rounded-lg shadow" width="360" height="250" >
+            </div>
+            <div class="col-lg-4">
+            <img src="{% static 'images/sunflowers.jpg' %}" alt="Sunflower" class= "rounded-lg shadow" width="360" height="250" >
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="h1 text-primary">Quick & Easy to use Anytime, Anywhere! </p></center>
+                <center><p class="h3 mt-3">Plan your day Better! Stay Organized!</p></center>
+                <center><p class="h5">TaskMate Helps you Track all your Tasks from one place.</p></center>
+
+                <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow">TaskMate</button></a></center>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
